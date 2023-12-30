@@ -26,21 +26,13 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "localize": [
-              "es-PR"
-            ],
             "outputPath": "dist/i18n-receipt-demo",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -72,6 +64,9 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+            },
+            "es": {
+              "localize": ["es-PR"]
             }
           },
           "defaultConfiguration": "production"
@@ -84,6 +79,9 @@
             },
             "development": {
               "browserTarget": "i18n-receipt-demo:build:development"
+            },
+            "es": {
+              "browserTarget": "i18n-receipt-demo:build:development,es"
             }
           },
           "defaultConfiguration": "development"
@@ -101,13 +99,8 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.css"],
             "scripts": []
           }
         }

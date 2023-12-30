@@ -79,11 +79,35 @@
         <note priority="1" from="description">please enter greeting here</note>
         <note priority="1" from="meaning">greeting</note>
       </trans-unit>
-      <trans-unit id="3611182664217778840" datatype="html">
-        <source>Your Receipt <x id="my_place_holder" equiv-text="this.title"/></source>
+      <trans-unit id="5721783236193721361" datatype="html">
+        <source> Updated: Updated <x id="ICU" equiv-text="{minutes, plural, =0 {just now} =1 {one minute ago} other
+  {{{minutes}} minutes ago}}" xid="1887283401472369100"/> by <x id="ICU_1" equiv-text="{gender, select, male {male} female {female}
+  other {other}}" xid="7670372064920373295"/>
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">54,58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2002272803511843863" datatype="html">
+        <source>{VAR_PLURAL, plural, =0 {just now} =1 {one minute ago} other {<x id="INTERPOLATION"/> minutes ago}}</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">55,56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7670372064920373295" datatype="html">
+        <source>{VAR_SELECT, select, male {male} female {female} other {other}}</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">56,57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1737753151350322492" datatype="html">
+        <source><x id="PH" equiv-text="this.title"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.ts</context>
-          <context context-type="linenumber">17</context>
+          <context context-type="linenumber">20</context>
         </context-group>
       </trans-unit>
     </body>
